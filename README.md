@@ -10,7 +10,9 @@ Install [craco](https://github.com/sharegate/craco) and [react-hot-reload](https
 npm install craco-plugin-react-hot-reload --save-dev
 ```
 
-Add the plugin into your craco.config.js;
+## Usage
+
+1. Add the plugin into your craco.config.js;
 ```
 reactHotReloadPlugin = require('craco-plugin-react-hot-reload');
 
@@ -19,6 +21,19 @@ module.exports = {
         plugin: reactHotReloadPlugin
     }]
 }
+```
+
+2. Follow 'step 2' from https://github.com/gaearon/react-hot-loader , replicated below:
+
+```js
+Mark your root component as hot-exported:
+// App.js
+import React from 'react'
+import { hot } from 'react-hot-loader'
+
+const App = () => <div>Hello World!</div>
+
+export default hot(module)(App)
 ```
 
 ## Acknowledgements
