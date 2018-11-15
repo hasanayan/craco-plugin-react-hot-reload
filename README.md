@@ -1,6 +1,7 @@
 # craco-plugin-react-hot-reload
 
 **Prerequisites**
+
 Install [craco](https://github.com/sharegate/craco) and [react-hot-reload](https://github.com/gaearon/react-hot-loader)
 
 ## Install
