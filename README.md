@@ -1,12 +1,24 @@
 # craco-plugin-react-hot-reload
 
 **Prerequisites**
+
 Install [craco](https://github.com/sharegate/craco) and [react-hot-reload](https://github.com/gaearon/react-hot-loader)
 
 ## Install
 
 ```
 npm install craco-plugin-react-hot-reload --save-dev
+```
+
+Add the plugin into your craco.config.js;
+```
+reactHotReloadPlugin = require('craco-plugin-react-hot-reload');
+
+module.exports = {
+    plugins: [{
+        plugin: reactHotReloadPlugin
+    }]
+}
 ```
 
 ## Acknowledgements
