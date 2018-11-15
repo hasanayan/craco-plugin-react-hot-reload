@@ -1,0 +1,19 @@
+{
+  "name": "craco-plugin-react-hot-reload",
+  "version": "0.0.1",
+  "description": "This craco plugin, allows you to add hot reload support to create-react-app without ejecting it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "craco",
+    "cra",
+    "create-react-app",
+    "hot-reload",
+    "react-hot-reload"
+  ],
+  "repository": "https://github.com/HasanAyan/craco-plugin-react-hot-reload",
+  "author": "Hasan Ayan",
+  "license": "MIT"
+}
