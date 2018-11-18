@@ -4,6 +4,8 @@
 
 Install [craco](https://github.com/sharegate/craco) and [react-hot-reload](https://github.com/gaearon/react-hot-loader)
 
+[![npm version](https://badge.fury.io/js/craco-plugin-react-hot-reload.svg)](https://badge.fury.io/js/craco-plugin-react-hot-reload)
+
 ## Install
 
 ```
