@@ -8,7 +8,7 @@ module.exports = {
             paths
         }
     }) => {
-        if (pluginOptions.preText) {
+        if (pluginOptions && pluginOptions.preText) {
             console.log(pluginOptions.preText);
         }
 
