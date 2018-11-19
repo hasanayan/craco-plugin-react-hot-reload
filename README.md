@@ -44,4 +44,4 @@ export default hot(module)(App)
 
 ## License
 
-Licensed under the MIT License, Copyright ©️ 2017 Chris Harris. See [LICENSE.md](LICENSE.md) for more information.
+Licensed under the MIT License, Copyright ©️ 2018 Hasan Ayan. See [LICENSE.md](LICENSE.md) for more information.
