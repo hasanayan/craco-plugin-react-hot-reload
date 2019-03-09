@@ -17,7 +17,7 @@
   "author": "Hasan Ayan",
   "license": "MIT",
   "peerDependencies": {
-    "@craco/craco": "^2.4.0",
-    "react-hot-loader": "^4.3.12"
+    "@craco/craco": "^3.5.0",
+    "react-hot-loader": "^4.8.0"
   }
 }
