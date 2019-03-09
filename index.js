@@ -1,7 +1,6 @@
 module.exports = {
   overrideWebpackConfig: ({
     webpackConfig,
-    pluginOptions,
     context: {
       env
     }
@@ -10,7 +9,7 @@ module.exports = {
       return webpackConfig;
     }
 
-    const conf = { ...webpackConfig };
+    let conf = webpackConfig;
 
     if (!conf || !conf.module || !conf.module.rules) {
       return webpackConfig;
@@ -26,21 +25,22 @@ module.exports = {
       }
     }
 
-    return {
-      ...conf,
-      resolve: {
-        ...(conf.resolve || {}),
-        alias: {
-          ...((conf.resolve && conf.resolve.alias) || {}),
-          'react-dom': '@hot-loader/react-dom'
-        }
-      }
-    };
+    return conf;
   },
 
   overrideCracoConfig: ({
     cracoConfig
   }) => {
+    if (!cracoConfig.webpack) {
+      cracoConfig.webpack = {};
+    }
+    if (!cracoConfig.webpack.alias) {
+      cracoConfig.webpack.alias = {}; 
+    }
+    const webpackAliases = cracoConfig.webpack.alias;
+
+    webpackAliases["react-dom"] = '@hot-loader/react-dom';
+
     return {
       ...cracoConfig,
       babel: {
@@ -50,6 +50,6 @@ module.exports = {
           "react-hot-loader/babel"
         ]
       }
-    };
+    };  
   }
 };

@@ -16,8 +16,9 @@
   "repository": "https://github.com/HasanAyan/craco-plugin-react-hot-reload",
   "author": "Hasan Ayan",
   "license": "MIT",
-  "peerDependencies": {
+  "peer-dependencies": {
     "@craco/craco": "^3.5.0",
-    "react-hot-loader": "^4.8.0"
+    "react-hot-loader": "^4.8.0",
+    "@hot-loader/react-dom": "^16.7.0"
   }
 }
