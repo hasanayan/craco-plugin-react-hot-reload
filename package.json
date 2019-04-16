@@ -1,6 +1,6 @@
 {
   "name": "@serus/craco-plugin-react-hot-reload",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This craco plugin, allows you to add hot load support to create-react-app without ejecting it",
   "main": "index.js",
   "scripts": {
