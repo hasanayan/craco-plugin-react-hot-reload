@@ -1,10 +1,5 @@
 module.exports = {
-  overrideWebpackConfig: ({
-    webpackConfig,
-    context: {
-      env
-    }
-  }) => {
+  overrideWebpackConfig: ({ webpackConfig, context: { env } }) => {
     if (env === "production") {
       return webpackConfig;
     }
@@ -15,7 +10,7 @@ module.exports = {
       return webpackConfig;
     }
 
-    const condition = u => typeof u === 'object' && u.loader && u.loader.includes('eslint-loader');
+    const condition = u => typeof u === "object" && u.loader && u.loader.includes("eslint-loader");
     const rule = conf.module.rules.find(rule => rule.use && rule.use.some(condition));
 
     if (rule) {
@@ -28,28 +23,22 @@ module.exports = {
     return conf;
   },
 
-  overrideCracoConfig: ({
-    cracoConfig
-  }) => {
+  overrideCracoConfig: ({ cracoConfig }) => {
     if (!cracoConfig.webpack) {
       cracoConfig.webpack = {};
     }
     if (!cracoConfig.webpack.alias) {
-      cracoConfig.webpack.alias = {}; 
+      cracoConfig.webpack.alias = {};
     }
-    const webpackAliases = cracoConfig.webpack.alias;
 
-    webpackAliases["react-dom"] = '@hot-loader/react-dom';
+    cracoConfig.webpack.alias["react-dom"] = "@hot-loader/react-dom";
 
     return {
       ...cracoConfig,
       babel: {
         ...(cracoConfig.babel || {}),
-        plugins: [
-          ...(cracoConfig.babel.plugins || []),
-          "react-hot-loader/babel"
-        ]
+        plugins: [...(cracoConfig.babel.plugins || []), "react-hot-loader/babel"]
       }
-    };  
+    };
   }
 };
