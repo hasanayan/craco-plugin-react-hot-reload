@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    // Editor goodies
+    "editor.rulers": [100],
+    // search
+    "search.exclude": {
+      "**/.git": true,
+      "**/node_modules": true
+    },
+    // Hide
+    "files.exclude": {
+      ".editorconfig": true,
+      "node_modules": true,
+      ".prettierrc": true,
+      ".gitignore": true,
+      "yarn.lock": true
+    },
+    // Prettier
+    "editor.formatOnSave": true,
+    "npm-scripts.showStartNotification": false
+  }
+}

@@ -2,9 +2,12 @@
 
 **Prerequisites**
 
-Install [craco](https://github.com/sharegate/craco) and [react-hot-reload](https://github.com/gaearon/react-hot-loader)
+1. Install [craco](https://github.com/sharegate/craco)
+2. [react-hot-reload](https://github.com/gaearon/react-hot-loader)
+3. Regarding [this](https://github.com/gaearon/react-hot-loader#react--dom) install proper @hot-loader/react-dom
 
-[![npm version](https://badge.fury.io/js/craco-plugin-react-hot-reload.svg)](https://badge.fury.io/js/craco-plugin-react-hot-reload)
+![](https://img.shields.io/npm/v/@serus/craco-plugin-react-hot-reload.svg?style=flat)
+![](https://img.shields.io/npm/dt/@serus/craco-plugin-react-hot-reload.svg?style=flat)
 
 ## Install
 
@@ -15,6 +18,7 @@ npm install craco-plugin-react-hot-reload --save-dev
 ## Usage
 
 1. Add the plugin into your craco.config.js;
+
 ```
 reactHotReloadPlugin = require('craco-plugin-react-hot-reload');
 
