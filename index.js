@@ -32,13 +32,15 @@ module.exports = {
     }
 
     cracoConfig.webpack.alias["react-dom"] = "@hot-loader/react-dom";
+    const babelConfig = cracoConfig.babel || {};
+    const babelPlugins = babelConfig.plugins || [];
 
     return {
       ...cracoConfig,
       babel: {
-        ...(cracoConfig.babel || {}),
-        plugins: [...(cracoConfig.babel.plugins || []), "react-hot-loader/babel"]
-      }
+        ...babelConfig,
+        plugins: [...babelPlugins, "react-hot-loader/babel"],
+      },
     };
   }
 };
