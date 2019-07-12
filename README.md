@@ -6,8 +6,8 @@
 2. [react-hot-reload](https://github.com/gaearon/react-hot-loader)
 3. Regarding [this](https://github.com/gaearon/react-hot-loader#react--dom) install proper @hot-loader/react-dom
 
-![](https://img.shields.io/npm/v/@serus/craco-plugin-react-hot-reload.svg?style=flat)
-![](https://img.shields.io/npm/dt/@serus/craco-plugin-react-hot-reload.svg?style=flat)
+![](https://img.shields.io/npm/v/craco-plugin-react-hot-reload.svg?style=flat)
+![](https://img.shields.io/npm/dt/craco-plugin-react-hot-reload.svg?style=flat)
 
 ## Install
 
