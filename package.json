@@ -1,6 +1,6 @@
 {
-  "name": "@serus/craco-plugin-react-hot-reload",
-  "version": "0.0.5",
+  "name": "craco-plugin-react-hot-reload",
+  "version": "0.0.6",
   "description": "This craco plugin, allows you to add hot load support to create-react-app without ejecting it",
   "main": "index.js",
   "scripts": {
@@ -17,11 +17,11 @@
   "repository": "https://github.com/HasanAyan/craco-plugin-react-hot-reload",
   "license": "MIT",
   "dependencies": {
-    "@craco/craco": "^4.1.0"
+    "@craco/craco": "^5.2.4"
   },
   "peerDependencies": {
-    "react": "^16.6.0",
-    "@hot-loader/react-dom": "^16.6.0",
-    "react-hot-loader": "^4.8.0"
+    "react": "^16.8.6",
+    "@hot-loader/react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.6"
   }
 }
